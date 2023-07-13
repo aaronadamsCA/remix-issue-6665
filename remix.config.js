@@ -10,7 +10,7 @@ module.exports = {
   serverModuleFormat: "esm",
   serverPlatform: "neutral",
   future: {
-    unstable_dev: {
+    v2_dev: {
       command: "wrangler pages dev public/",
       restart: false,
     },
