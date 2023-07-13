@@ -11,7 +11,7 @@ module.exports = {
   serverPlatform: "neutral",
   future: {
     v2_dev: {
-      command: "wrangler pages dev public/",
+      command: "wrangler pages dev public/ --compatibility-date=2023-07-10",
       restart: false,
     },
     v2_errorBoundary: true,
