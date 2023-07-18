@@ -8,11 +8,19 @@ module.exports = {
   serverMainFields: ["browser", "module", "main"],
   serverMinify: true,
   serverModuleFormat: "esm",
+  serverNodeBuiltinsPolyfill: {
+    modules: {
+      fs: "empty",
+      path: true,
+      process: true,
+      tty: true,
+      url: true,
+    },
+  },
   serverPlatform: "neutral",
   future: {
     v2_dev: {
       command: "wrangler pages dev public/ --compatibility-date=2023-07-10",
-      restart: false,
     },
     v2_errorBoundary: true,
     v2_headers: true,

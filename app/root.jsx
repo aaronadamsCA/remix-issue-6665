@@ -1,3 +1,5 @@
+import process from "node:process";
+
 import {
   Links,
   LiveReload,
@@ -6,6 +8,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+
+globalThis.process = process;
 
 export default function App() {
   return (
